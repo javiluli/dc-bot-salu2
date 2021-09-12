@@ -1,0 +1,20 @@
+{
+  "name": "dc-bot-salu2",
+  "version": "1.0.0",
+  "description": "Bot de discord para saludar a los miembros y contar su tiempo conectado",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "bot",
+    "discrod",
+    "bot-dc",
+    "bot-discord"
+  ],
+  "author": "javiluli",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
