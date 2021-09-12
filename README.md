@@ -6,7 +6,7 @@ Permite **contar el tiempo** de conexión de cada usuario del servidor, tanto el
 
 Es necesario tener un Token-Bot generado en la creación del bot en [Discord Developer Portal](https://discord.com/developers/applications).
 
-También necesitas obtener el ID del canal de texto donde el bot enviara los mensajes
+También necesitas obtener el ID del canal de texto donde el bot enviara los mensajes.
 
 ## Funcionalidad principal
 
@@ -59,7 +59,7 @@ Mensaje de desconexión
 
 ![desconexion](./src/img/desconexionServer.PNG)
 
-> Nota: la información de cada usuario se almacena en un Map() de javascript, algo sencillo pero rápido de programar, para que los datos perduren se deberá utilizar una BD u otro método de almacenar información, ya que cada vez que se reinicie el bot los datos almacenados en el Map() se eliminaran
+> Nota: la información de cada usuario se almacena en un Map() de javascript, algo sencillo pero rápido de programar, para que los datos perduren se deberá utilizar una BD u otro método de almacenar información, ya que cada vez que se reinicie el bot los datos almacenados en el Map() se eliminaran.
 
 ## Comandos disponibles
 
