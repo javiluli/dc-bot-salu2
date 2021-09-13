@@ -1,12 +1,16 @@
-# Salu2 - Bot de Discord
+# Bot de Discord - Salu2
+
+<p>
+  <a href="https://nodejs.org/es/"><img src="https://img.shields.io/badge/node.js-v14.16.1-%23339933" alt="Node.js version" /></a>
+  <a href="https://discord.js.org/#/docs/main/12.5.3/general/welcome"><img src="https://img.shields.io/badge/discord.js-v12.5.1-%235865F2" alt="Discord.js version" /></a>
+</p>
 
 Permite **contar el tiempo** de conexión de cada usuario del servidor, tanto el tiempo de sesión como el tiempo total conectado al servidor.
 
 ## Requisitos
 
-Es necesario tener un Token-Bot generado en la creación del bot en [Discord Developer Portal](https://discord.com/developers/applications).
-
-También necesitas obtener el ID del canal de texto donde el bot enviara los mensajes.
+- Un **Token Bot** generado en la creación de bots en [Discord Developer Portal](https://discord.com/developers/applications).
+- El **ID** del canal de texto donde el bot enviara los mensajes.
 
 ## Funcionalidad principal
 
