@@ -57,8 +57,10 @@ client.on('voiceStateUpdate', (oldVoice, newVoice) => {
     }
 
     // comprobar que un usuario tiene el mismo nombre ssiempre y si no se cambia
+    const member = message.member
     if (user.id === ID_USER) {
-      user.username = USER_NAME
+      member.nickname = USER_NAME
+
       if (user.username !== USER_NAME) {
         user.username = USER_NAME
       }
