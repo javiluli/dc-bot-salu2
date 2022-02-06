@@ -46,7 +46,7 @@ client.on('voiceStateUpdate', (oldVoice, newVoice) => {
         DATA_MAP,
         new Usuario(
           dataUser.id,
-          dataUser.nickname,
+          dataUser.username,
           millisNow,
           dataUser.totalTime
         )
@@ -72,7 +72,7 @@ client.on('voiceStateUpdate', (oldVoice, newVoice) => {
 
     updateUser.setUser(
       DATA_MAP,
-      new Usuario(updateUser.id, updateUser.nickname, 0, tiempoTotal)
+      new Usuario(updateUser.id, updateUser.username, 0, tiempoTotal)
     )
 
     embed.setTitle('Datos de tiempo de los usuarios').addFields(
