@@ -9,6 +9,11 @@ const ID_TEXT_CHANNEL = process.env.ID_TEXT_CHANNEL
 // Token de creadin del bot (https://discord.com/developers/applications)
 const TOKEN_BOT = process.env.TOKEN_BOT
 
+// ID de un usuario
+const ID_USER = process.env.ID_USER
+// nombre de un usuario
+const USER_NAME = 'J₳VłⱠɄⱠł🍪'
+
 // Formato de almacenar informacion de los usuario (lo apropiado seria un BD)
 const DATA_MAP = new Map()
 
@@ -49,6 +54,13 @@ client.on('voiceStateUpdate', (oldVoice, newVoice) => {
     } else {
       const newUser = new Usuario(user.id, user.username, millisNow, 0)
       newUser.setUser(DATA_MAP, newUser)
+    }
+
+    // comprobar que un usuario tiene el mismo nombre ssiempre y si no se cambia
+    if (user.id === ID_USER) {
+      if (user.name !== USER_NAME) {
+        user.name = USER_NAME
+      }
     }
   }
 
